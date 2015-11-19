@@ -1,0 +1,103 @@
+body {
+    background-color: #414141;
+    color: white;
+    margin-left: 0 auto;
+  
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+a:hover {
+  color:gray;
+}
+
+h1 {
+     font-family: 'Chelsea Market', cursive;
+     font-size: 40px;
+}
+
+.header {
+    width: 100%; 
+    background-color: #414141;
+
+}
+
+.entity {
+    float: left;
+    margin-left: 50px;
+}
+ 
+nav {
+  float: left;
+   width: 100%;
+   
+ }
+
+ul {
+    display: block;
+    float: right;
+    padding: 15px;
+      }
+
+ul li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Chelsea Market', cursive;
+}
+
+img {
+    text-align: center;
+    border: 5px solid black;
+    margin: 5px;
+}
+
+  .fa-diamond {
+        display: none;
+        font-size: 30px;
+        float: right;
+        margin: 15px;
+        cursor: pointer;
+      }
+
+ @media (max-width: 900px) {
+        .fa-diamond {
+          font-size: 30px;
+          display: block;
+        }
+
+        ul {
+          display: none;
+          width: 100%;
+        
+        }
+
+        .entity {
+            height:200px;
+        }
+
+        ul li {
+          width: 100%;
+
+     
+        }
+      }
+  
+
+
+
+ /*@media all and (max-width: 800px) {
+        .image {
+          border: solid white;
+        }
+
+        img {
+             height: 200px;
+        }
+      }*/

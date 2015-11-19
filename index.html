@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+            </title>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+            <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+            <link href='https://fonts.googleapis.com/css?family=Frijole|Chelsea+Market' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        </head>
+        <body>
+                
+
+                <div class="header">
+                       <a href="index.html"><h1>Vanessa Powers</h1></a>
+                </div>
+            
+                    <nav>  
+                     <i class="fa fa-diamond"></i> 
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Entities</a></li>
+                            <li><a href="">Other Works</a></li>
+                            <li><a href="">Statement</a></li>
+                        </ul>
+                    </nav>
+               
+            
+               <div class="entity"><img src="images/entity1.jpg" onmouseover="this.src='images/entity2.jpg'" onmouseout="this.src='images/entity1.jpg' "/></div>
+
+         <script>
+                    $(document).ready(function(){
+                    $(".entity").hide().fadeIn(5000);
+                });
+                   $(document).ready(function() {
+                        $("ul li a").mouseenter(function() {
+                          $(this).css({
+                          });
+                        });
+
+                        $("ul li a").mouseleave(function() {
+                          $(this).attr("style", "");
+                        });
+
+                        $(".fa-diamond").click(function() {
+                          if ($("ul").hasClass("open")) {
+                            $("ul").slideUp();
+                            $("ul").removeClass("open");
+                          } else {
+                            $("ul").slideDown();
+                            $("ul").addClass("open");
+                          }
+                        });
+                      });
+
+    </script>
+       
+        </body>
+    </html>
