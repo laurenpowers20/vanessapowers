@@ -1,7 +1,8 @@
-body {
+html {
     background-color: #414141;
     color: white;
     margin-left: 0 auto;
+    font-family: 'Chelsea Market', cursive;
   
 }
 
@@ -16,7 +17,6 @@ a:hover {
 }
 
 h1 {
-     font-family: 'Chelsea Market', cursive;
      font-size: 40px;
 }
 
@@ -29,11 +29,13 @@ h1 {
 .entity {
     float: left;
     margin-left: 50px;
+    border: 5px solid black;
+  
 }
  
 nav {
   float: left;
-   width: 100%;
+  width: 100%;
    
  }
 
@@ -44,32 +46,29 @@ ul {
       }
 
 ul li {
+    float: left;
     display: inline-block;
     font-size: 30px;
     padding: 15px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-family: 'Chelsea Market', cursive;
+   
 }
 
-img {
-    text-align: center;
-    border: 5px solid black;
-    margin: 5px;
-}
 
-  .fa-diamond {
-        display: none;
-        font-size: 30px;
-        float: right;
-        margin: 15px;
-        cursor: pointer;
-      }
+.mouse {
+  display: none;
+  font-size: 15px;
+  float: left;
+  cursor: pointer;
+}
 
  @media (max-width: 900px) {
-        .fa-diamond {
-          font-size: 30px;
+        .mouse {
+          font-size: 15px;
           display: block;
+          border-width: 2px;
+          border-color: black;
         }
 
         ul {
@@ -78,14 +77,14 @@ img {
         
         }
 
-        .entity {
-            height:200px;
+        .entity img {
+           height: 400px;
         }
 
         ul li {
           width: 100%;
 
-     
+
         }
       }
   

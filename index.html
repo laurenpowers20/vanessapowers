@@ -17,7 +17,8 @@
                 </div>
             
                     <nav>  
-                     <i class="fa fa-diamond"></i> 
+                    <div class="mouse"><h4>Navigate</h4><img src="images/mouse1.jpg"></div>
+                    <!-- <i class="fa fa-diamond"></i> -->
                         <ul>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Entities</a></li>
@@ -34,25 +35,26 @@
                     $(".entity").hide().fadeIn(5000);
                 });
                    $(document).ready(function() {
-                        $("ul li a").mouseenter(function() {
-                          $(this).css({
-                          });
-                        });
+                  $("ul li a").mouseenter(function() {
+                    $(this).css({
+                     
+                    });
+                  });
 
-                        $("ul li a").mouseleave(function() {
-                          $(this).attr("style", "");
-                        });
+                  $("ul li a").mouseleave(function() {
+                    $(this).attr("style", "");
+                  });
 
-                        $(".fa-diamond").click(function() {
-                          if ($("ul").hasClass("open")) {
-                            $("ul").slideUp();
-                            $("ul").removeClass("open");
-                          } else {
-                            $("ul").slideDown();
-                            $("ul").addClass("open");
-                          }
-                        });
-                      });
+                  $(".mouse").click(function() {
+                    if ($("ul").hasClass("open")) {
+                      $("ul").slideUp();
+                      $("ul").removeClass("open");
+                    } else {
+                      $("ul").slideDown();
+                      $("ul").addClass("open");
+                    }
+                  });
+                });
 
     </script>
        
