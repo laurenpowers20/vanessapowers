@@ -6,19 +6,19 @@
             <link rel="stylesheet" type="text/css" href="styles.css">
              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
             <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-            <link href='https://fonts.googleapis.com/css?family=Frijole|Chelsea+Market' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         </head>
         <body>
                 
 
                 <div class="header">
-                       <a href="index.html"><h1>Vanessa Powers</h1></a>
+                      <h1><a href="index.html"><h1>Vanessa Powers</a></h1>
                 </div>
             
                     <nav>  
-                    <div class="mouse"><h4>Navigate</h4><img src="images/mouse1.jpg"></div>
-                    <!-- <i class="fa fa-diamond"></i> -->
+                        <div class="mouse"><!--<h5>Navigate</h5>--><i class="fa fa-bars"></i><img src="images/mouse1.jpg"></div>
+                   
                         <ul>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Entities</a></li>
@@ -26,8 +26,6 @@
                             <li><a href="">Statement</a></li>
                         </ul>
                     </nav>
-               
-            
                <div class="entity"><img src="images/entity1.jpg" onmouseover="this.src='images/entity2.jpg'" onmouseout="this.src='images/entity1.jpg' "/></div>
 
          <script>
@@ -35,7 +33,7 @@
                     $(".entity").hide().fadeIn(5000);
                 });
                    $(document).ready(function() {
-                  $("ul li a").mouseenter(function() {
+                   $("ul li a").mouseenter(function() {
                     $(this).css({
                      
                     });
