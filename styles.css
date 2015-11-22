@@ -1,13 +1,14 @@
 html {
-    background-color: #414141;
-    color: white;
+    color: black;
     margin: 0 auto;
-    font-family: 'Special Elite', cursive;
+    text-align: center;
+    font-family: 'Cinzel', serif;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
+    text-align: center;
 }
 
 
@@ -15,45 +16,63 @@ a:hover {
   color:gray;
 }
 
+
+nav {
+  float: left;
+  width: 100%;
+  display: block; 
+  text-align: center;
+  clear: both;
+
+}
+
+/*nav {
+  width: 100%;
+  text-align: center;
+}*/
+
+ul {
+  text-align: 
+}
+
+
+ul li {
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px;    
+}
+
+
 h1 {
   font-size: 40px;
 }
 
 .header {
   width: 100%; 
-  text-align: center;
-  background-color: #414141;
-
-}
-
-.entity {
-    text-align: center; 
-}
- 
-nav {
-  float: left;
-  width: 100%;
   clear: both;
-  
-   
 }
 
-ul {
-    display: block;
-    padding: 15px;
-    width: 100%;
-    text-align: center;
+
+.artistpic {
+  float: left;
+  width: 300px;
+  margin-right: 15px;
 }
 
-ul li {
-    float: left;
-    display: inline-block;
-    font-size: 30px;
-    padding: 15px;
-    width: 100%;
-      
+#eye {
+  text-align: center;
 }
 
+.bio {
+  font-size: 20px;
+}
+
+.left-col, .right-col {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+}
 
 .mouse {
   display: none;
@@ -63,32 +82,28 @@ ul li {
 
 }
 
+.footer {
+  color: gray;
+  
+}
+
  @media (max-width: 900px) {
         .mouse {
           font-size: 15px;
           display: block;
-          border-width: 2px;
-          border-color: black;
           text-align: center;
           width:100%;
           padding-bottom: 10px;
-          padding-left: 25px;
         }
 
         ul {
           display: none;
           width: 100%;
-        
-        }
-
-        .entity img {
-           height: 400px;
+          margin-left: -50px;
         }
 
         ul li {
           width: 100%;
-
-
         }
       }
   
