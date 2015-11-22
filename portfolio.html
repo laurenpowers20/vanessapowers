@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Vanessa Powers | Portfolio</title>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+            <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+            <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+              <link rel="shortcut icon" href="images/eye.png" type="image/ico" />
+        </head>
+
+        <body>
+          <div class="header">
+                <h1><a href="index.html"><h1>Vanessa Powers</a></h1>
+                <div id="eye"><img src="images/eye.png"></div>
+          </div>
+   
+              <nav> 
+                  <div class="mouse">
+                   <i class="fa fa-bars"></i>
+                  </div>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="">Contact</a></li>
+                  </ul>
+              </nav>
+
+                    <div class ="imagegallery">
+                        <img class="thumbnail" src="images/thumbnail34.jpg">
+                        <img class="thumbnail" src="images/thumbnail2.jpg">
+                        <img class="thumbnail" src="images/thumbnail3.jpg">
+                        <img class="thumbnail" src="images/thumbnail4.jpg">
+                        <img class="thumbnail" src="images/thumbnail36.jpg">
+                        <img class="thumbnail" src="images/thumbnail5.jpg">
+                        <img class="thumbnail" src="images/thumbnail37.jpg">
+                        <img class="thumbnail" src="images/thumbnail6.jpg">
+                        <img class="thumbnail" src="images/thumbnail7.jpg">
+                        <img class="thumbnail" src="images/thumbnail8.jpg">
+                        <img class="thumbnail" src="images/thumbnail9.jpg">
+                        <img class="thumbnail" src="images/thumbnail10.jpg">
+                        <img class="thumbnail" src="images/thumbnail11.jpg">
+                        <img class="thumbnail" src="images/thumbnail12.jpg">
+                        <img class="thumbnail" src="images/thumbnail13.jpg">
+                        <img class="thumbnail" src="images/thumbnail14.jpg">
+                        <img class="thumbnail" src="images/thumbnail15.jpg">
+                        <img class="thumbnail" src="images/thumbnail16.jpg">
+                        <img class="thumbnail" src="images/thumbnail17.jpg">
+                        <img class="thumbnail" src="images/thumbnail18.jpg">
+                        <img class="thumbnail" src="images/thumbnail19.jpg">
+                        <img class="thumbnail" src="images/thumbnail20.jpg">
+                        <img class="thumbnail" src="images/thumbnail21.jpg">
+                        <img class="thumbnail" src="images/thumbnail22.jpg">
+                        <img class="thumbnail" src="images/thumbnail23.jpg">
+                        <img class="thumbnail" src="images/thumbnail24.jpg">
+                        <img class="thumbnail" src="images/thumbnail25.jpg">
+                        <img class="thumbnail" src="images/thumbnail26.jpg">
+                        <img class="thumbnail" src="images/thumbnail27.jpg">
+                        <img class="thumbnail" src="images/thumbnail29.jpg">
+                        <img class="thumbnail" src="images/thumbnail30.jpg">
+                        <img class="thumbnail" src="images/thumbnail31.jpg">
+                        <img class="thumbnail" src="images/thumbnail32.jpg">
+                        <img class="thumbnail" src="images/thumbnail33.jpg">
+                        <img class="thumbnail" src="images/thumbnail1.jpg">
+                    </div>
+
+                   <div class="lightbox">
+                        <a class="close">Close</a>
+                        <img class="enlarged-image" src="">
+                  </div>
+
+
+                  <div class ="footer">
+                  </div>
+                 
+    
+              <!-- <div class="entity"><img src="images/entity1.jpg" onmouseover="this.src='images/entity2.jpg'" onmouseout="this.src='images/entity1.jpg' "/></div> -->
+
+          <script>
+                          $(document).ready(function(){
+                          $(".header").hide().fadeIn(5000);
+                      });
+                         $(document).ready(function() {
+                         $("ul li a").mouseenter(function() {
+                          $(this).css({
+                           
+                          });
+                        });
+
+                        $("ul li a").mouseleave(function() {
+                          $(this).attr("style", "");
+                        });
+
+                        $(".mouse").click(function() {
+                          if ($("ul").hasClass("open")) {
+                            $("ul").slideUp();
+                            $("ul").removeClass("open");
+                          } else {
+                            $("ul").slideDown();
+                            $("ul").addClass("open");
+                          }
+                        });
+                      });
+                    $(function() {
+      $('#thumbnails img').click(function() {
+            $('#thumbnails').hide();
+            var src = $(this).attr('src').replace('.png', 'Large.png');
+            $('#largeImage').attr('src', src).show();
+      });
+      $('#largeImage').hide().click(function() {
+            $(this).hide();
+            $('#thumbnails').show();
+      });
+});
+
+          </script>
+       
+        </body>
+    </html>
