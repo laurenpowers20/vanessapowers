@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <title>Vanessa Powers</title>
+            <title>Vanessa Powers | Contact</title>
             <link rel="stylesheet" type="text/css" href="styles.css">
              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
             <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -11,21 +11,38 @@
         </head>
 
         <body>
-                <div class="header">
-                      <h1><a href="index.html"><h1>Vanessa Powers</a></h1>
-                      <div id="eye"> <img src="images/eye.png"></div>
+            <div class="header">
+                <h1><a href="index.html"><h1>Vanessa Powers</a></h1>
+                <div id="eye"> <img src="images/eye.png"></div>
+            </div>
+     
+                <nav> 
+
+                    <div class="mouse">
+                    <i class="fa fa-bars"></i>
+                    </div>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+
+                <div class ="socialmedia">
+                    <a href="https://www.instagram.com/nesschild/" target="blank_"><img src="images/instagram.png"></a>
+    
+                    <a href="http://www.vanessapowers.tumblr.com/" target="blank_"><img src="images/tumblr.gif"></a>
                 </div>
-         
-                    <nav> 
-                        <div class="mouse">
-                         <i class="fa fa-bars"></i>
-                        </div>
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
+
+              <div class="contact">
+                <a href="mailto:v.powers89@gmail.com?Subject=Hello%20Vanessa" target="_top"> <h3>E-mail: v.powers89@gmail.com</h3></a>
+              </div>
+
+             
+
+
+
                   <div class ="footer">
                     <h6><i class="fa fa-copyright"></i>Vanessa Powers 2015. Website designed by Lauren Powers</h6>
                   </div>
@@ -35,7 +52,7 @@
 
           <script>
                           $(document).ready(function(){
-                          $(".header").hide().fadeIn(4000);
+                          $(".header").hide().fadeIn(3000);
                       });
                          $(document).ready(function() {
                          $("ul li a").mouseenter(function() {
