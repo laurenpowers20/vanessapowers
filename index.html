@@ -3,61 +3,58 @@
         <head>
             <title>Vanessa Powers</title>
             <link rel="stylesheet" type="text/css" href="styles.css">
-             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
             <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
             <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-              <link rel="shortcut icon" href="images/eye.png" type="image/ico" />
+            <link rel="shortcut icon" href="images/eye.png" type="image/ico" />
         </head>
 
         <body>
-                <div class="header">
-                      <h1><a href="index.html"><h1>Vanessa Powers</a></h1>
-                      <div id="eye"> <img src="images/eye.png"></div>
-                </div>
-         
-                    <nav> 
-                        <div class="mouse">
-                        <h2><i class="fa fa-bars"></i></h2>
-                        </div>
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                  <div class ="footer">
-                    <h6><i class="fa fa-copyright"></i>Vanessa Powers 2015. Website designed by Lauren Powers</h6>
-                  </div>
-                
-    
-              <!-- <div class="entity"><img src="images/entity1.jpg" onmouseover="this.src='images/entity2.jpg'" onmouseout="this.src='images/entity1.jpg' "/></div> -->
+            <div class="header">
+                  <h1><a href="index.html"><h1>Vanessa Powers</a></h1>
+                  <div id="eye"> <img src="images/eye.png"></div>
+            </div>
+     
+                <nav> 
+                    <div class="mouse">
+                    <h2><i class="fa fa-bars"></i></h2>
+                    </div>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+              <div class ="footer">
+                <h6><i class="fa fa-copyright"></i>Vanessa Powers 2015. Website designed by Lauren Powers</h6>
+              </div>
 
           <script>
-                          $(document).ready(function(){
-                          $(".header").hide().fadeIn(4000);
-                      });
-                         $(document).ready(function() {
-                         $("ul li a").mouseenter(function() {
-                          $(this).css({
-                           
-                          });
-                        });
+              $(document).ready(function(){
+              $(".header").hide().fadeIn(4000);
+          });
+             $(document).ready(function() {
+             $("ul li a").mouseenter(function() {
+              $(this).css({
+               
+              });
+            });
 
-                        $("ul li a").mouseleave(function() {
-                          $(this).attr("style", "");
-                        });
+            $("ul li a").mouseleave(function() {
+              $(this).attr("style", "");
+            });
 
-                        $(".mouse").click(function() {
-                          if ($("ul").hasClass("open")) {
-                            $("ul").slideUp();
-                            $("ul").removeClass("open");
-                          } else {
-                            $("ul").slideDown();
-                            $("ul").addClass("open");
-                          }
-                        });
-                      });
+            $(".mouse").click(function() {
+              if ($("ul").hasClass("open")) {
+                $("ul").slideUp();
+                $("ul").removeClass("open");
+              } else {
+                $("ul").slideDown();
+                $("ul").addClass("open");
+              }
+            });
+          });
 
           </script>
        
