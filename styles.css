@@ -27,7 +27,6 @@ nav {
   display: block; 
   text-align: center;
   clear: both;
-
 }
 
 
@@ -39,7 +38,7 @@ ul {
 ul li {
   display: inline-block;
   font-size: 30px;
-  margin: 10px;    
+  margin-right: 10px;   
 }
 
 
@@ -77,12 +76,11 @@ h2 {
 }
 
 .left-col {
-  width: 40%;
+ width: 30%
 }
 
 .right-col {
-  width: 60%; 
-
+  width: 70%;
 }
 
 .mouse {
@@ -90,7 +88,6 @@ h2 {
   font-size: 15px;
   float: left;
   cursor: pointer;
-
 }
 
 .footer {

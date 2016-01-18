@@ -8,26 +8,26 @@
             <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
             <link rel="shortcut icon" href="images/eye.png" type="image/ico" />
+            <link href="lightbox/src/css/lightbox.css" rel="stylesheet">
         </head>
 
         <body>
-            <div class="header">
-                  <h1><a href="index.html"><h1>Vanessa Powers</a></h1>
-                  <div id="eye"> <img src="images/eye.png"></div>
-            </div>
-     
-                <nav> 
-                    <div class="mouse">
-                    <h2><i class="fa fa-bars"></i></h2>
-                    </div>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-             
+          <div class="header">
+                <h1><a href="index.html"><h1>Vanessa Powers</a></h1>
+                <div id="eye"><img src="images/eye.png"></div>
+          </div>
+   
+              <nav> 
+                  <div class="mouse">
+                   <h2><i class="fa fa-bars"></i></h2>
+                  </div>
+                  <ul>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </nav>
 
-               <div class ="imagegallery">
+             <div class ="imagegallery">
 
                   <a href="images/1.jpg" data-lightbox="image" title ="Oil on Canvas. 2015"><img class="thumbnail" src="images/thumbnail1.jpg">
 
@@ -80,14 +80,17 @@
                   <a href="images/23.jpg" data-lightbox="image" title ="Death Mask. 16 x 20 in. Pen and Watercolor. 2014."><img class="thumbnail" src="images/thumbnail23.jpg"></a>
               </div>
 
-               <div class ="footer">
-                <h6><i class="fa fa-copyright"></i>Vanessa Powers 2016.<br> Website designed by Lauren Powers</h6>
-              </div>
 
+            <div class ="footer">
+                <h6><i class="fa fa-copyright"></i>Vanessa Powers 2016.<br> Website designed by Lauren Powers</h6>
+            </div>
+                 
+    
+              <!-- <div class="entity"><img src="images/entity1.jpg" onmouseover="this.src='images/entity2.jpg'" onmouseout="this.src='images/entity1.jpg' "/></div> -->
 
           <script>
               $(document).ready(function(){
-              $(".header").hide().fadeIn(4000);
+              $(".header").hide().fadeIn(3000);
           });
              $(document).ready(function() {
              $("ul li a").mouseenter(function() {
@@ -110,8 +113,8 @@
               }
             });
           });
-
           </script>
+         <script src="lightbox/src/js/lightbox.js"></script>
        
         </body>
     </html>
